@@ -40,15 +40,13 @@ export default function Auth() {
       await signIn("credentials", {
         email,
         password,
-        redirect: false,
-        callbackUrl: "/",
+        callbackUrl: "/profiles",
       });
 
-      router.push("/");
     } catch (error) {
       console.log(error);
     }
-  }, [email, password, router]);
+  }, [email, password]);
 
   return (
     <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-fixed bg-center bg-cover">
@@ -97,7 +95,7 @@ export default function Auth() {
               <div
                 onClick={() =>
                   signIn("google", {
-                    callbackUrl: "/",
+                    callbackUrl: "/profiles",
                   })
                 }
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition"
@@ -106,7 +104,7 @@ export default function Auth() {
               </div>
               <div   onClick={() =>
                   signIn("github", {
-                    callbackUrl: "/",
+                    callbackUrl: "/profiles",
                   })
                 } className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition">
                 <FaGithub size={30} />
