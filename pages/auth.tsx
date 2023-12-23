@@ -64,7 +64,7 @@ export default function Auth() {
               {variant === "register" && (
                 <Input
                   label="Username"
-                  onChange={(ev) => setName(ev.target.value)}
+                  onChange={(ev: any) => setName(ev.target.value)}
                   id="name"
                   type="name"
                   value={name}
@@ -72,14 +72,14 @@ export default function Auth() {
               )}
               <Input
                 label="Email"
-                onChange={(ev) => setEmail(ev.target.value)}
+                onChange={(ev: any) => setEmail(ev.target.value)}
                 id="email"
                 type="email"
                 value={email}
               />
               <Input
                 label="Password"
-                onChange={(ev) => setPassword(ev.target.value)}
+                onChange={(ev: any) => setPassword(ev.target.value)}
                 id="password"
                 type="password"
                 value={password}

@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import useCurrentUser from "@/hooks/useCurrentUser";
 import { NextPageContext } from "next";
 import { getSession, signOut } from "next-auth/react";
@@ -24,16 +25,7 @@ const Home = () => {
 
   return (
     <>
-      <h1 className="text-white">test</h1>
-      <p className="text-white">Logged In as : {user?.email}</p>
-      <button
-        className="h-10 w-full bg-white"
-        onClick={() => {
-          signOut();
-        }}
-      >
-        Logout
-      </button>
+   <Navbar />
     </>
   );
 };
