@@ -11,11 +11,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible }) => {
   return (
     <div className="bg-black w-56 absolute top-8 left-0 py-5 flex-col border-2 border-gray-500">
       <div className="flex flex-col gap-4">
-        <div className="px-3 text-center text-white hover:underline">Home</div>
-        <div className="px-3 text-center text-white hover:underline">Series</div>
-        <div className="px-3 text-center text-white hover:underline">Films</div>
-        <div className="px-3 text-center text-white hover:underline">New & Popular</div>
-        <div className="px-3 text-center text-white hover:underline">Browse by Languages</div>
+        <div className="px-3 text-center text-white hover:underline">홈</div>
+        <div className="px-3 text-center text-white hover:underline">시리즈</div>
+        <div className="px-3 text-center text-white hover:underline">영화</div>
+        <div className="px-3 text-center text-white hover:underline">신작 & 인기</div>
+        <div className="px-3 text-center text-white hover:underline">언어</div>
       </div>
     </div>
   );

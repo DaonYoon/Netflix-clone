@@ -44,13 +44,13 @@ const Navbar = () => {
         >
           <img className="h-4 lg:h-7" src="/images/logo.png" alt="" />
           <div className="flex-row ml-8 gap-7 hidden lg:flex">
-            <NavbarItem label="Home" />
-            <NavbarItem label="Series" />
-            <NavbarItem label="Films" />
-            <NavbarItem label="New & Popular" />
-            <NavbarItem label="My List" />
-            <NavbarItem label="Browse by languages" />
-          </div>s
+            <NavbarItem label="홈" />
+            <NavbarItem label="시리즈" />
+            <NavbarItem label="영화" />
+            <NavbarItem label="신작 & 인기" />
+            <NavbarItem label="나의 리스트" />
+            <NavbarItem label="언어" />
+          </div>
           <div
             onClick={toggleMobileMenu}
             className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative"
