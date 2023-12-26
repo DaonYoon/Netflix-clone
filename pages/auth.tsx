@@ -29,6 +29,7 @@ export default function Auth() {
         name,
         password,
       });
+      setVariant('login');
     } catch (error) {
       console.log(error);
     } finally {
