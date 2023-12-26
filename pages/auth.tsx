@@ -43,6 +43,8 @@ export default function Auth() {
         callbackUrl: "/profiles",
       });
 
+      router.push('/profiles')
+
     } catch (error) {
       console.log(error);
     }
